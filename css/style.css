@@ -1,73 +1,58 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Corpo */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: #fff;
+  margin: 0;
+  font-family: Arial;
+  background: #111;
+  color: white;
 }
 
 /* Header */
 header {
-  background: #000;
-  padding: 15px;
+  background: black;
   text-align: center;
+  padding: 15px;
 }
 
 header h1 {
-  color: #d4af37;
+  color: gold;
 }
 
-nav {
-  margin-top: 10px;
-}
-
+/* Menu */
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 10px;
   text-decoration: none;
-}
-
-nav a:hover {
-  color: #d4af37;
 }
 
 /* Banner */
 .banner {
+  background: url('../img/teste.jpg') center/cover;
   height: 400px;
-  background: url('barbearia.jpg') center/cover;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  text-align: center;
-}
-
-.banner h2 {
-  font-size: 40px;
-}
-
-.banner p {
-  font-size: 18px;
 }
 
 /* Botão */
 .btn {
-  background: #d4af37;
-  color: #000;
+  background: gold;
   padding: 10px 20px;
+  color: black;
   text-decoration: none;
-  border-radius: 5px;
+  margin-top: 10px;
 }
 
-.btn:hover {
-  background: #b8962e;
+/* Serviços */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
 }
 
 /* Seções */
@@ -76,25 +61,8 @@ section {
   text-align: center;
 }
 
-/* Serviços */
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.card {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-  width: 200px;
-}
-
 /* Rodapé */
 footer {
-  background: #000;
+  background: black;
   padding: 20px;
-  text-align: center;
 }
