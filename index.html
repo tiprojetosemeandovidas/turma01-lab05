@@ -1,50 +1,63 @@
-<!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Heritage | Barbearia & Estilo Premium</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
-
 <body>
 
-<header>
-  <h1>Barbearia Estilo Fino</h1>
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Serviços</a>
-    <a href="#">Contato</a>
-  </nav>
-</header>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">HERITAGE<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#experiencia">A Experiência</a></li>
+                <li><a href="#" class="btn-primary">Agendar Agora</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="banner">
-  <h2>Transforme seu visual</h2>
-  <p>Cortes modernos e atendimento de qualidade</p>
-  <a href="#" class="btn">Agendar Agora</a>
-</section>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="reveal">Mais que um corte, seu legado.</span>
+                <h1>Onde a tradição encontra o <strong>homem moderno.</strong></h1>
+                <p>A experiência definitiva em estética masculina, com o cuidado que você merece e o estilo que o mundo exige.</p>
+                <div class="hero-btns">
+                    <a href="#servicos" class="btn-primary">Ver Serviços</a>
+                    <a href="https://wa.me/seu-numero" class="btn-secondary">Falar com Especialista</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="sobre">
-  <h2>Sobre Nós</h2>
-  <p>Barbearia localizada no bairro com atendimento de qualidade.</p>
-</section>
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Serviços de Mestre</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="uil uil-scissors-cutting"></i>
+                    <h3>Corte Signature</h3>
+                    <p>Consultoria visagista para encontrar o corte que valoriza seu rosto.</p>
+                </div>
+                <div class="service-card">
+                    <i class="uil uil-medkit"></i>
+                    <h3>Barba Real</h3>
+                    <p>Toalha quente, óleos essenciais e o navalhado clássico impecável.</p>
+                </div>
+                <div class="service-card">
+                    <i class="uil uil-glass"></i>
+                    <h3>The Club Experience</h3>
+                    <p>Ambiente exclusivo com bar premium enquanto você se cuida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="servicos">
-  <h2>Serviços</h2>
-
-  <div class="cards">
-    <div class="card">Corte</div>
-    <div class="card">Barba</div>
-    <div class="card">Hidratação</div>
-  </div>
-</section>
-
-<section class="agendamento">
-  <h2>Agendamento</h2>
-  <a href="#" class="btn">Agendar</a>
-</section>
-
-<footer>
-  <p>📍 Seu bairro</p>
-</footer>
-
-<!-- JS -->
-<script src="js/script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
