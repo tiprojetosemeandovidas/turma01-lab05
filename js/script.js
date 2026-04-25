@@ -1,40 +1,12 @@
-// Efeito de Header ao rolar
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('#header');
-    if (window.scrollY > 50) {
-        header.classList.add('scroll');
-    } else {
-        header.classList.remove('scroll');
-    }
+// Cursor Customizado (Opcional, mas muito premium)
+const cursor = document.createElement('div');
+cursor.classList.add('custom-cursor');
+document.body.appendChild(cursor);
+
+document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
 });
 
-// Animação de entrada (Simple Scroll Reveal)
-const observerOptions = {
-    threshold: 0.1
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.service-card, .hero-content').forEach(el => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(30px)";
-    el.style.transition = "all 0.8s ease-out";
-    observer.observe(el);
-});
-
-// Smooth Scroll para âncoras
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// Estilize o .custom-cursor no CSS:
+// .custom-cursor { width: 20px; height: 20px; border: 1px solid #c5a059; border-radius: 50%; position: fixed; pointer-events: none; z-index: 10000; transition: transform 0.1s; }
